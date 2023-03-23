@@ -8,7 +8,7 @@ import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
-const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
+const DOMAIN_NAME = 'windfall.one' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
@@ -18,7 +18,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Evan's blog",
+      title: "xian's blog",
       description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
     }
   },
@@ -68,14 +68,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
         ],
       },
-      {
-        text: '页面',
-        link: '/ui/',
-        items: [
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
-        ],
-      },
+      // {
+      //   text: '页面',
+      //   link: '/ui/',
+      //   items: [
+      //     { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
+      //     { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+      //   ],
+      // },
       {
         text: '技术',
         link: '/technology/',
@@ -365,3 +365,4 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     '.vuepress/config/htmlModules.ts',
   ]
 })
+
