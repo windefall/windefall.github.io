@@ -6,7 +6,7 @@ set -e
 # git push -f git@github.com:windefall/windefall.github.io.git
 # git push -f git@github.com:windefall/windefall.github.io.git main
 # git@github.com:windefall/repo.git git@github.com:windefall/windefall.github.io https://git@github.com:userName/repo.git
-push_addr=`git@github.com:windefall/windefall.github.io` # git提交地址，也可以手动设置，比如：push_addr=git@github.com:xugaoyi/vuepress-theme-vdoing.git
+push_addr=`git@github.com:windefall/windefall.github.io.git` # git提交地址，也可以手动设置，比如：push_addr=git@github.com:xugaoyi/vuepress-theme-vdoing.git
 commit_info=`git describe --all --always --long`
 dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
 push_branch=gh-pages # 推送的分支
@@ -20,6 +20,7 @@ cd $dist_path
 git init
 git add -A
 git commit -m "deploy, $commit_info"
+# gh-pages
 git push -f $push_addr HEAD:$push_branch
 
 cd -
