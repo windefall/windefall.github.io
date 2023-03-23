@@ -3,7 +3,9 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-
+# git push -f git@github.com:windefall/windefall.github.io.git
+# git push -f git@github.com:windefall/windefall.github.io.git main
+# git@github.com:windefall/repo.git git@github.com:windefall/windefall.github.io https://git@github.com:userName/repo.git
 push_addr=`git@github.com:windefall/windefall.github.io` # git提交地址，也可以手动设置，比如：push_addr=git@github.com:xugaoyi/vuepress-theme-vdoing.git
 commit_info=`git describe --all --always --long`
 dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
